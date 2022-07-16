@@ -399,6 +399,7 @@ body{
 .post-head .start > img{
   width: 40px;
   height: 40px;
+  object-fit: cover;
   border-radius: 50%;
 }
 
@@ -475,7 +476,12 @@ body{
   color: var(--text-color);
 }
 
-.react-emojis > img{
+.emoji-group{
+  display: flex;
+  gap: -1px;
+}
+
+.react-emojis .emoji-group > img{
   width: 20px;
   height: 20px;
   border-radius: 50px;
@@ -525,6 +531,11 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.change-profile a{
+  padding: 5px;
+  border-radius: 5px;
 }
 
 .emoji-btns .change-profile a img{
