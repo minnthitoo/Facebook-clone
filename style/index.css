@@ -158,7 +158,7 @@ body{
   display: flex;
   flex-direction: column;
   row-gap: 15px;
-  width: 700px;
+  width: 650px;
   height: 300vh;
   background-color: var(--bg-color);
 }
@@ -567,7 +567,98 @@ body{
   position: fixed;
   top: 0px;
   right: 0px;
+  bottom: 0px;
   width: 400px;
-  height: 100vh;
-  background-color: blue;
+  min-height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: var(--bg-color);
+}
+
+.ads-continer{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+
+.ads {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.ads-continer .ads > img{
+  width: 100px;
+}
+
+.ads > p{
+  color: var(--text-color);
+}
+
+.ads-continer .shortcuts{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ads-continer .shortcuts > img{
+  width: 30px;
+  height: 30px;
+}
+
+.ads-continer .shortcuts > h3{
+  color: var(--text-color);
+}
+
+.contacts-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts-container .contact-text > h3{
+  color: var(--text-color);
+}
+
+.contacts-container .contacts-accessories{
+  display: flex;
+  gap: 10px;
+}
+
+.contacts-accessories > img{
+  width: 20px;
+}
+
+.contacts{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contacts .contact-group{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.contact-group > img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.contact-group > span{
+  color: var(--text-color);
+}
+
+.contact-group .active{
+  position:absolute;
+  bottom: 0px;
+  left: 20px;
+  width: 10px;
+  height: 10px;
+  background-color: var(--active-color);
+  border-radius: 50%;
 }
